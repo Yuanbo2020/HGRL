@@ -24,7 +24,8 @@ waiting....
 ### 1) DNN
 ```python 
 python inference.py -model DNN 
-
+```
+```python
 Loading data time: 0.395 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -37,7 +38,8 @@ AEC:
 ### 2) CNN
 ```python 
 python inference.py -model CNN 
-
+```
+```python
 Loading data time: 0.346 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -50,7 +52,8 @@ AEC:
 ### 3) CNN-Transformer
 ```python 
 python inference.py -model CNN_Transformer 
-
+```
+```python
 Loading data time: 0.401 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -63,7 +66,8 @@ AEC:
 ### 4) PANN-Fixed
 ```python 
 python inference.py -model PANN_fixed 
-
+```
+```python
 Loading data time: 0.388 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -76,7 +80,8 @@ AEC:
 ### 5) PANN-Fine-tuning
 ```python 
 python inference.py -model PANN_fine_tuning 
-
+```
+```python
 Loading data time: 0.392 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -89,7 +94,8 @@ AEC:
 ### 6) HGRL
 ```python 
 python inference.py -model HGRL 
-
+```
+```python
 Loading data time: 0.613 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
