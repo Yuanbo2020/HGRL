@@ -16,8 +16,13 @@ from sklearn import metrics
 
 
 def main(argv):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-model', type=str, required=True)
+    args = parser.parse_args()
 
-    model_index = 5
+    model_type = args.model
+    models = ['DNN', 'CNN', 'CNN_Transformer', 'PANN_fixed', 'PANN_fine_tuning', 'HGRL']
+    model_index = models.index(model_type)
     using_models = [DNN, CNN, CNN_Transformer, PANN, PANN, HGRL]
 
     event_class = len(config.event_labels)
