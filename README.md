@@ -91,7 +91,7 @@ AEC:
         Acc:  0.9188202247191011
 ```
 
-### 6) HGRL
+### 6) HGRL: Hierarchical graph representation learning
 ```python 
 python inference.py -model HGRL 
 ```
