@@ -19,13 +19,25 @@ waiting....
 
 ```3) Enter the application folder: cd application```
 
-## Start inference and evaluate the model
+## Start to infer and evaluate the model
 
-### 1) DNN
+### 1) HGRL: Hierarchical graph representation learning
+```python 
+python inference.py -model HGRL 
+----------------------------------------------------------------------------------------
+Loading data time: 0.613 s
+Split development data to 2200 training and 245 validation data and 445 test data.
+Number of 445 audios in testing
+ARP:
+        mse_loss: 1.0493635489891715,  mae_loss: 0.8028289986728283, r2: 0.45838324378599105
+AEC:
+        Acc:  0.9171348314606742
+```
+
+### 2) DNN
 ```python 
 python inference.py -model DNN 
-```
-```python
+----------------------------------------------------------------------------------------
 Loading data time: 0.395 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -35,11 +47,10 @@ AEC:
         Acc:  0.9048689138576779
 ```
  
-### 2) CNN
+### 3) CNN
 ```python 
 python inference.py -model CNN 
-```
-```python
+----------------------------------------------------------------------------------------
 Loading data time: 0.346 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -49,11 +60,10 @@ AEC:
         Acc:  0.9074906367041199
 ```
 
-### 3) CNN-Transformer
+### 4) CNN-Transformer
 ```python 
 python inference.py -model CNN_Transformer 
-```
-```python
+----------------------------------------------------------------------------------------
 Loading data time: 0.401 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -63,11 +73,10 @@ AEC:
         Acc:  0.8894194756554307
 ```
  
-### 4) PANN-Fixed
+### 5) PANN-Fixed
 ```python 
 python inference.py -model PANN_fixed 
-```
-```python
+----------------------------------------------------------------------------------------
 Loading data time: 0.388 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -77,11 +86,10 @@ AEC:
         Acc:  0.9105805243445693
 ```
 
-### 5) PANN-Fine-tuning
+### 6) PANN-Fine-tuning
 ```python 
 python inference.py -model PANN_fine_tuning 
-```
-```python
+----------------------------------------------------------------------------------------
 Loading data time: 0.392 s
 Split development data to 2200 training and 245 validation data and 445 test data.
 Number of 445 audios in testing
@@ -91,19 +99,7 @@ AEC:
         Acc:  0.9188202247191011
 ```
 
-### 6) HGRL: Hierarchical graph representation learning
-```python 
-python inference.py -model HGRL 
-```
-```python
-Loading data time: 0.613 s
-Split development data to 2200 training and 245 validation data and 445 test data.
-Number of 445 audios in testing
-ARP:
-        mse_loss: 1.0493635489891715,  mae_loss: 0.8028289986728283, r2: 0.45838324378599105
-AEC:
-        Acc:  0.9171348314606742
-```
+
 
 # Modification and Training
 
