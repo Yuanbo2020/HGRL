@@ -6,9 +6,16 @@
 </div>  
 
 # Citation
-Please feel free to use the method and consider citing our paper as
+Please feel free to use the dataset, code, and models, and consider citing our paper as
 ```bibtex
-waiting....
+@inproceedings{hou23_interspeech,
+  author={Yuanbo Hou and Siyang Song and Cheng Luo and Andrew Mitchell and Qiaoqiao Ren and Weicheng Xie and Jian Kang and Wenwu Wang and Dick Botteldooren},
+  title={{Joint Prediction of Audio Event and Annoyance Rating in an Urban Soundscape by Hierarchical Graph Representation Learning}},
+  year=2023,
+  booktitle={Proc. INTERSPEECH 2023},
+  pages={331--335},
+  doi={10.21437/Interspeech.2023-1021}
+}
 ```
 
 # Run the model
